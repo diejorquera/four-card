@@ -13,33 +13,33 @@ export const CardsContainer = () => {
             title: "Supervisor",
             description: "Monitors activity to identify project roadblocks",
             icon: IconSupervisor,
-            color: "hsl(217, 28%, 15%)"
+            color: "cyan"
         },
         {
             id: 2,
             title: "Team Builder",
             description: "Scans our talent network to create the optimal team for your project",
             icon: IconTeamBuilder,
-            color: "hsl(217, 28%, 15%)"
+            color: "red"
         },
         {
             id: 3,
             title: "Karma",
             description: "Regularly evaluates our talent to ensure quality",
             icon: IconKarma,
-            color: "hsl(217, 28%, 15%)"
+            color: "orange"
         },
         {
             id: 4,
             title: "Calculator",
             description: "Uses data from past projects to provide better delivery estimates",
             icon: IconCalculator,
-            color: "hsl(217, 28%, 15%)"
+            color: "blue"
         }
     ];
 
   return (
-    <section>
+    <section className="flex flex--col items-center">
         {
             services.map((service) => (
                 <Card 
