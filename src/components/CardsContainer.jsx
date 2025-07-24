@@ -38,16 +38,29 @@ export const CardsContainer = () => {
         }
     ];
 
-  return (
-    <section className="flex flex--col items-center">
-        {
-            services.map((service) => (
-                <Card 
-                    key={service.id}
-                    {...service}
-                />
-            ))
-        }
+// Render the cards section
+// return (
+//     <section className="flex flex--col items-center">
+//          {
+//                 services.map((service) => (
+//                         <Card 
+//                                 key={service.id}
+//                                 {...service}
+//                         />
+//                 ))
+//         }
+//     </section>
+// )
+return (
+    <section className="flex flex-col gap-6 xl:flex-row xl:items-center xl:gap[30px]">
+        <Card {...services[0]} />
+        <div className="flex flex-col  gap-6 xl:gap-[30px]">
+        <Card {...services[1]} />
+        <Card {...services[2]} />
+        </div>
+        <Card {...services[3]} />
+
     </section>
-  )
+)
+
 }

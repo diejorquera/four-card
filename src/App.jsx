@@ -3,8 +3,8 @@ import { CardsContainer } from './components/CardsContainer';
 function App() {
 
   return (
-    <main className="font-Poppins text-grey-400 bg-[#fafafa] ">
-      <section className='h-screen'>
+    <main className="font-Poppins text-grey-400 flex justify-center">
+      <section className='w-[296px] my-[80px] xl:w-[1110px] xl:mx-auto'>
       <Hero />
       <CardsContainer />
       </section>
